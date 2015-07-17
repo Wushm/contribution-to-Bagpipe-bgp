@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 BaGPipe BGP
 ===========
 
@@ -365,3 +366,7 @@ License
 Apache 2.0 license (except additions and modifications to ExaBGP, licensed as 3-Clause BSD license).
 
 See [LICENSE](LICENSE) file.
+=======
+# contribution-to-Bagpipe-bgp
+Internship on Orange Labs, Data center network
+>>>>>>> 6bb920fef8be55c5024eafd4777e28552741d2d5

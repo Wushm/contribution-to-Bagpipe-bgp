@@ -1,0 +1,9 @@
+
+sudo ovs-vsctl del-br br-mpls || true
+sudo ovs-vsctl --may-exist add-br br-mpls
+#sudo ovs-vsctl --may-exist set-br br-mpls datapath_type=netdev
+sudo ovs-vsctl del-port br-mpls eth0 || true
+sudo ovs-vsctl del-port br-mpls eth1 || true
+# remove the default 'NORMAL' rule
+sudo ovs-ofctl del-flows br-mpls --strict priority=0
+

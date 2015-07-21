@@ -170,6 +170,11 @@ class RESTAPI(LookingGlass):
                                                   # assumed as already plugged
                                                   # into the evpn
                     }
+		# the VLAN id for VM traffic, which is usually pluged into evpn in cumulus.
+		'vlan':{ # vlan is a type of linuxif ??? We consider it directly as the linuxif
+			port_name:'swp2.100',#name of the vlan interface
+			#id_evpn:'xyz', #indicate which evpn we should plug the port into.
+			}  
             }
             if local_port is not a list, it is assumed to be a name of a linux
             interface (string)

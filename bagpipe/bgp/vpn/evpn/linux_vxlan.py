@@ -61,7 +61,7 @@ class LinuxVXLANEVIDataplane(VPNInstanceDataplane):
             self.log.debug("Bridge %s created", self.bridge_name)
 
         self._create_and_plug_vxlan_if()
-
+	
         self.log.debug("VXLAN interface %s plugged on bridge %s",
                        self.vxlan_if_name, self.bridge_name)
 
@@ -346,3 +346,106 @@ class LinuxVXLANDataplaneDriver(DataplaneDriver):
 
     def _runCommand(self, command, *args, **kwargs):
         return runCommand(self.log, command, *args, **kwargs)
+
+class LinuxVXLANEVIHybridDataplane(LinuxVXLANEVIDataplane):
+
+    def __init__(self,*args,**kwargs):
+	LinuxVXLANEVIDataplane.__init__(self,*args)
+
+    def _create_and_plug_vlan_if(self):
+        self.log.debug("Creating and plugging VLAN interface %s",
+                       self.name)
+
+        if self._interface_exists(self.name):
+            self._remove_vlan_if()
+
+        # Create VLAN interface
+	self.log.debug("LINKE %s NAME %s type vlan id %d" , self.vlan_if_name,self.name,self.VLANLabel)
+        self._runCommand(
+            "ip link add link %s name %s type vlan id %d " %
+            (self.vlan_if_name,self.name,self.VLANLabel,
+             )
+        )
+
+        self._runCommand("ip link set %s up" % self.vlan_if_name)
+        self._runCommand("ip link set %s up" % self.name)
+
+    def _cleanup_vlan_if(self):
+        if self._is_vlan_if_on_bridge():
+            # Unplug VLAN interface from Linux bridge
+            self._unplug_from_bridge(self.name)
+
+        self._remove_vlan_if()
+
+    def _remove_vlan_if(self):
+        # Remove VLAN interface
+        self._runCommand("ip link set %s down" % self.name)
+        self._runCommand("ip link del %s" % self.name)
+
+    def _is_vlan_if_on_bridge(self):
+        (output, _) = self._runCommand(
+            "brctl show %s | grep '%s' | sed -e 's/\s\+//g'" %
+            (self.bridge_name, self.name))
+
+        return True if (output == self.name) else False
+
+    @logDecorator.logInfo
+    def vifPlugged(self, macAddress, ipAddress, localPort, label):
+        # Plug localPort only into EVPN bridge (Created by dataplane driver)
+	self.name = localPort['linuxif']+'.'+localPort['vlan']
+ 	self.vlan_if_name = localPort['linuxif']
+	self.VLANLabel = int(localPort['vlan'])
+		
+	self._create_and_plug_vlan_if()
+        
+        if BRIDGE_NAME_PREFIX in self.bridge_name:
+            self.log.debug("Plugging localPort %s into EVPN bridge %s",
+                           self.name, self.bridge_name)
+            self._runCommand("brctl addif %s %s" %
+                             (self.bridge_name, self.name),
+                             raiseExceptionOnError=False)
+
+    @logDecorator.logInfo
+    def vifUnplugged(self, macAddress, ipAddress, localPort, label,
+                     lastEndpoint=True):
+        # Unplug localPort only from EVPN bridge (Created by dataplane driver)
+        if BRIDGE_NAME_PREFIX in self.bridge_name:
+            self.log.debug("Unplugging localPort %s from EVPN bridge %s",
+                           self.name, self.bridge_name)
+            self._unplug_from_bridge(self.name)
+	self._cleanup_vlan_if()
+
+
+class LinuxVXLANHybridDataplaneDriver(LinuxVXLANDataplaneDriver):
+
+    """
+    E-VPN Dataplane driver relying on the Linux kernel linuxbridge
+    VXLAN and VLAN implementation.
+    
+    Typical use: deployed on Cumulus
+    """
+
+    dataplaneInstanceClass = LinuxVXLANEVIHybridDataplane
+    requiredKernel = "3.2.0"
+ 
+    def __init__(self, config, init=True):
+	LinuxVXLANDataplaneDriver.__init__(self,config,init=True)
+	
+    def _initReal(self, config):
+        self.config = config
+        self.log.info("Really initializing %s", self.__class__.__name__)
+
+        o = self._runCommand("uname -r")
+        kernelRelease = o[0][0].split("-")[0]
+
+        if (StrictVersion(kernelRelease) <
+                StrictVersion(LinuxVXLANHybridDataplaneDriver.requiredKernel)):
+            self.log.warning("%s requires at least Linux kernel %s (you are"
+                             " running %s)" %
+                             (self.__class__.__name__,
+                              LinuxVXLANHybridDataplaneDriver.requiredKernel,
+                              kernelRelease))
+
+        self._runCommand("modprobe vxlan")
+	self._runCommand("modprobe 8021q")
+

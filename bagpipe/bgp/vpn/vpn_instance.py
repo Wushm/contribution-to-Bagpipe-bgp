@@ -142,8 +142,8 @@ class VPNInstance(TrackerWorker, Thread, LookingGlassLocalLogger):
             self._unsubscribe(self.afi, self.safi, rt)
 
         self.dataplane.cleanup()
-
-        self.labelAllocator.release(self.instanceLabel)
+	if self.vnid is None:
+	        self.labelAllocator.release(self.instanceLabel)
 
         # this makes sure that the thread will be stopped, and any remaining
         # routes/subscriptions are released:
@@ -386,8 +386,8 @@ class VPNInstance(TrackerWorker, Thread, LookingGlassLocalLogger):
                 macAddress, ipPrefix, localPort, label, lastEndpoint)
 
             # Free label to the allocator
-            self.labelAllocator.release(label)
-
+            if self.vnid is None:
+		self.labelAllocator.release(label)
             # Forget data for this port if last endpoint
             if lastEndpoint:
                 del self.localPort2Endpoints[localPort['linuxif']]

@@ -202,7 +202,10 @@ def main():
                       default=[], action="append")
     parser.add_option("--vnid", dest="vnid",
     		      help="specify the vnid for hyper network with Cumulus switches"
-		      "default is None")
+		      " default is None")
+    parser.add_option("--vlan",dest="vlan",
+		      help="if specified,VLAN interface will be attachted to the VPN instance")
+
     (options, _) = parser.parse_args()
 
     if not(options.operation):
@@ -289,6 +292,9 @@ def main():
 
             if options.ovs_vlan:
                 local_port['ovs']['vlan'] = options.ovs_vlan
+	
+	if options.vlan:
+	    local_port['vlan'] = options.vlan
 
     if not(options.mac):
         if options.network_type == "ipvpn":

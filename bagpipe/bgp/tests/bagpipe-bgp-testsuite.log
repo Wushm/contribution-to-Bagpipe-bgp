@@ -5250,3 +5250,493 @@
 2015-07-17 09:13:03,506 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
 2015-07-17 09:13:03,507 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 110 ('Incoming traffic for TestableVPNInstance 1')
 2015-07-17 09:13:03,507 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:23,987 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222063915216'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fe4e3d50>, None, <Mock id='140222063853456'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:23,988 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:23,988 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:23,988 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 149 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:23,988 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,989 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:23,989 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222063916752'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fe4e3d50>, 26, <Mock id='140222063853456'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:23,989 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:23,989 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:23,989 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,990 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:23,990 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:23,990 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:23,990 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 150 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:23,991 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:23,991 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:23,991 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:23,991 MainThread                     test_vpn_instance.1            DEBUG    MAC address already plugged, checking port consistency
+2015-07-17 10:36:23,991 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:23,991 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,992 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 149 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:23,992 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:23,993 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222064045264'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fe4f3f10>, None, <Mock id='140222055156240'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:23,994 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:23,994 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:23,994 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 134 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:23,994 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,994 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:23,994 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222064045648'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fe4f3f10>, 26, <Mock id='140222055156240'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:23,995 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:23,995 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:23,995 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,995 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:23,996 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:23,996 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:23,996 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 135 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:23,996 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:23,996 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:23,996 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:23,997 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:23,997 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:23,997 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 134 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:23,998 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:23,999 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055243600'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc98690>, None, <Mock id='140222055243536'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:23,999 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:23,999 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:23,999 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 173 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:23,999 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,000 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,000 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055273360'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc98690>, 26, <Mock id='140222055243536'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,000 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,000 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,000 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,001 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,001 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,001 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,001 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 174 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,001 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            DEBUG    MAC address already plugged, checking port consistency
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,002 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 175 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.3/32'
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,002 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.3/32)
+2015-07-17 10:36:24,003 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,003 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,003 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 173 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,004 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,005 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055381840'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdcb5ed0>, None, <Mock id='140222055381776'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,005 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,005 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,005 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 120 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,006 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,006 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,006 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055382864'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdcb5ed0>, 26, <Mock id='140222055381776'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,006 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,006 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,007 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,007 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,007 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,007 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,008 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 121 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,008 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,008 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,008 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,008 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,008 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 122 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,009 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,009 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,009 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,009 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,010 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 120 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,010 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,011 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054995984'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc58b90>, None, <Mock id='140222054995920'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,011 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,011 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,012 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 135 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,012 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,012 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,012 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054997008'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc58b90>, 26, <Mock id='140222054995920'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,012 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,012 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,013 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,013 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,013 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,013 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,013 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 136 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,014 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,014 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,014 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,014 MainThread                     test_vpn_instance.1            DEBUG    MAC address already plugged, checking port consistency
+2015-07-17 10:36:24,015 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,015 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,015 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 135 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,016 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,016 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055126096'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc7b8d0>, None, <Mock id='140222055126032'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,017 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,017 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,017 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 169 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,017 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,017 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,018 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055127120'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc7b8d0>, 26, <Mock id='140222055126032'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,018 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,018 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,018 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,018 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,019 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,019 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,019 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 170 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,019 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,019 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,020 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.2/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,020 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,020 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,021 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 169 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,021 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,022 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054740304'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc1e510>, None, <Mock id='140222054740240'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,022 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,022 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,023 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 135 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,023 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,023 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,023 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054741328'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc1e510>, 26, <Mock id='140222054740240'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,023 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,023 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,024 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,024 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,024 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,025 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,025 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 136 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,025 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,025 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,025 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.3/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,025 MainThread                     test_vpn_instance.1            DEBUG    MAC address already plugged, checking port consistency
+2015-07-17 10:36:24,026 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,026 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,026 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 135 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,027 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,027 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054802832'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc25710>, None, <Mock id='140222054802768'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,028 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,028 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,028 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 143 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,028 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,028 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,029 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054803856'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc25710>, 26, <Mock id='140222054802768'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,029 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,029 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,030 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,030 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,031 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,031 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,031 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 144 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,031 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,032 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,032 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,032 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,032 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 145 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,032 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,032 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,033 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,033 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,033 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 143 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,033 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,034 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054995408'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc42450>, None, <Mock id='140222054994512'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,034 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,035 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,035 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 156 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,035 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,035 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,035 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054971984'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc42450>, 26, <Mock id='140222054994512'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,036 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,036 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,036 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,036 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,037 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 157 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32') {}
+2015-07-17 10:36:24,037 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,038 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,038 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 157 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32')
+2015-07-17 10:36:24,038 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,038 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,039 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 156 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,039 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,040 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055077840'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc25290>, None, <Mock id='140222055078800'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,040 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,040 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,040 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 138 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,040 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,041 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,041 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054802320'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc25290>, 26, <Mock id='140222055078800'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,041 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,041 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,042 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,042 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,042 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,042 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,042 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 139 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,043 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,043 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,043 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.2/32') {}
+2015-07-17 10:36:24,043 MainThread                     test_vpn_instance.1            ERROR    vifUnplugged called for endpoint (00:00:fe:ed:fa:ce, 10.0.0.2/32), but no consistent informations or was not plugged yet
+2015-07-17 10:36:24,044 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,044 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,044 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 138 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,044 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,045 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054946768'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc3dc90>, None, <Mock id='140222054946896'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,045 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,046 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,046 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 129 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,046 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,046 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,046 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055038672'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc3dc90>, 26, <Mock id='140222054946896'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,047 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,047 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,047 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,047 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,047 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,048 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,048 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 130 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,048 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,048 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,048 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.3/32') {}
+2015-07-17 10:36:24,048 MainThread                     test_vpn_instance.1            ERROR    vifUnplugged called for endpoint (00:00:de:ad:be:ef, 10.0.0.3/32), but no consistent informations or was not plugged yet
+2015-07-17 10:36:24,049 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,049 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,049 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 129 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,050 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,051 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055379920'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc85c50>, None, <Mock id='140222055380752'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,051 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,051 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,052 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 184 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,052 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,052 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,052 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055276432'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc85c50>, 26, <Mock id='140222055380752'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,052 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,052 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,053 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,053 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,053 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,053 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,054 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 185 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,054 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,054 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,054 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,054 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,054 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 186 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,054 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,055 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,055 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32') {}
+2015-07-17 10:36:24,055 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,055 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,055 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 185 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32')
+2015-07-17 10:36:24,056 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,056 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,056 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 184 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,056 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,057 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054683536'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdccf0d0>, None, <Mock id='140222055241296'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,058 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,058 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,058 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 139 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,058 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,058 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,058 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055352208'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdccf0d0>, 26, <Mock id='140222055241296'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,059 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,059 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,059 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,059 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,060 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 140 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,060 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,060 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 141 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32') {}
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,061 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 140 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32')
+2015-07-17 10:36:24,061 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32') {}
+2015-07-17 10:36:24,062 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,062 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,062 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 141 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32')
+2015-07-17 10:36:24,062 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,062 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,063 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 139 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,063 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,064 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055157328'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc1edd0>, None, <Mock id='140222055153872'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,064 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,064 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,064 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 167 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,065 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,065 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,065 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222055153744'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc1edd0>, 26, <Mock id='140222055153872'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,065 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,065 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,066 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,066 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,066 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,066 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,066 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 168 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,067 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 169 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,067 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32') {}
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,068 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 168 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32')
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32') {}
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,068 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap2 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,069 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 169 ('Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32')
+2015-07-17 10:36:24,069 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,069 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,070 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 167 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,070 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,071 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054151824'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc089d0>, None, <Mock id='140222054151760'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,071 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,071 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,071 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 170 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,071 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,072 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,072 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054152848'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdc089d0>, 26, <Mock id='140222054151760'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,072 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,072 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,072 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,073 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,073 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,073 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,073 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 171 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,074 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 172 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,074 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,075 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.3/32') {}
+2015-07-17 10:36:24,075 MainThread                     test_vpn_instance.1            ERROR    vifUnplugged called for endpoint (00:00:de:ad:be:ef, 10.0.0.3/32), but no consistent informations or was not plugged yet
+2015-07-17 10:36:24,075 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,075 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,076 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 170 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,076 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,077 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054290704'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbac7d0>, None, <Mock id='140222054290640'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,077 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,077 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,077 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 104 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,078 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,078 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,078 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054291728'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbac7d0>, 26, <Mock id='140222054290640'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,078 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,078 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,079 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,079 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,079 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,080 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,080 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 105 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,080 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,080 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,080 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,080 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,080 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 106 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:c0:de', '10.0.0.4/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.4)
+2015-07-17 10:36:24,081 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 107 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:de:ad:c0:de/10.0.0.4/32'
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:de:ad:c0:de, 10.0.0.4/32)
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:f0:0d', '10.0.0.5/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,081 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.5)
+2015-07-17 10:36:24,081 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 108 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:f0:0d/10.0.0.5/32'
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:fe:ed:f0:0d, 10.0.0.5/32)
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32') {}
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,082 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 105 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32')
+2015-07-17 10:36:24,082 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32') {}
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,083 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 106 ('Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32')
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:de:ad:c0:de', '10.0.0.4/32') {}
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap2 endpoint (00:00:de:ad:c0:de, 10.0.0.4/32)
+2015-07-17 10:36:24,083 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 107 ('Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:de:ad:c0:de/10.0.0.4/32')
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifUnplugged called with arguments ('00:00:fe:ed:f0:0d', '10.0.0.5/32') {}
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,083 MainThread                     test_vpn_instance.1            INFO     Synthesizing and withdrawing BGP route for VIF tap2 endpoint (00:00:fe:ed:f0:0d, 10.0.0.5/32)
+2015-07-17 10:36:24,084 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 108 ('Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:f0:0d/10.0.0.5/32')
+2015-07-17 10:36:24,084 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,084 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,084 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 104 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,085 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,086 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054338000'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbbf250>, None, <Mock id='140222054337936'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,086 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,086 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,086 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 103 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,086 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,087 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,087 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222054190032'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbbf250>, 26, <Mock id='140222054337936'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,087 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,087 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,087 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,088 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,088 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,088 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,089 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 103 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,089 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,090 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222053945424'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbb8810>, None, <Mock id='140222053920720'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,090 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,090 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,090 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 126 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,091 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,091 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,091 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222053920400'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdbb8810>, 26, <Mock id='140222053920720'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,091 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,091 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,092 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,092 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,093 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,093 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,093 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 126 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,094 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
+2015-07-17 10:36:24,094 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222053991056'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdb6a710>, None, <Mock id='140222053990992'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,095 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,095 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,095 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 135 for 'Incoming traffic for TestableVPNInstance 1'
+2015-07-17 10:36:24,095 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,095 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,095 MainThread                     bagpipe.bgp.vpn.vpn_instance   DEBUG    test_vpn_instance.TestableVPNInstance method __init__ called with arguments (<Mock name='BGPManager' id='140222053992080'>, <bagpipe.bgp.vpn.label_allocator.LabelAllocator object at 0x7f87fdb6a710>, 26, <Mock id='140222053990992'>, 1, 1, [target:64512:10], [target:64512:10], '10.0.0.1', 24, None) {}
+2015-07-17 10:36:24,097 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Setting worker name to TestableVPNInstance 1
+2015-07-17 10:36:24,097 MainThread                     bagpipe.bgp.engine.worker      DEBUG    Instantiated TestableVPNInstance 1 worker
+2015-07-17 10:36:24,097 MainThread                     bagpipe.bgp.engine.worker      INFO     Subscribe: Subscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,097 MainThread                     test_vpn_instance.1            DEBUG    readvertise not enabled
+2015-07-17 10:36:24,098 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:be:ef', '10.0.0.2/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,098 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.2)
+2015-07-17 10:36:24,098 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 136 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:de:ad:be:ef/10.0.0.2/32'
+2015-07-17 10:36:24,098 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,098 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:de:ad:be:ef, 10.0.0.2/32)
+2015-07-17 10:36:24,098 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:fa:ce', '10.0.0.3/32', {'linuxif': 'tap1'}) {}
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.3)
+2015-07-17 10:36:24,099 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 137 for 'Incoming traffic for TestableVPNInstance 1, interface tap1, endpoint 00:00:fe:ed:fa:ce/10.0.0.3/32'
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap1 endpoint (00:00:fe:ed:fa:ce, 10.0.0.3/32)
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:de:ad:c0:de', '10.0.0.4/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.4)
+2015-07-17 10:36:24,099 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 138 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:de:ad:c0:de/10.0.0.4/32'
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,099 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:de:ad:c0:de, 10.0.0.4/32)
+2015-07-17 10:36:24,100 MainThread                     test_vpn_instance.1            INFO     test_vpn_instance.TestableVPNInstance method vifPlugged called with arguments ('00:00:fe:ed:f0:0d', '10.0.0.5/32', {'linuxif': 'tap2'}) {}
+2015-07-17 10:36:24,100 MainThread                     test_vpn_instance.1            DEBUG    Plugging port (10.0.0.5)
+2015-07-17 10:36:24,100 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    Allocated label 139 for 'Incoming traffic for TestableVPNInstance 1, interface tap2, endpoint 00:00:fe:ed:f0:0d/10.0.0.5/32'
+2015-07-17 10:36:24,100 MainThread                     test_vpn_instance.1            DEBUG    Will advertise as /32 instead of /32
+2015-07-17 10:36:24,100 MainThread                     test_vpn_instance.1            INFO     Synthesizing and advertising BGP route for VIF tap2 endpoint (00:00:fe:ed:f0:0d, 10.0.0.5/32)
+2015-07-17 10:36:24,101 MainThread                     test_vpn_instance.1            DEBUG    test_vpn_instance.TestableVPNInstance method _stop called with arguments () {}
+2015-07-17 10:36:24,101 MainThread                     bagpipe.bgp.engine.worker      INFO     Unsubscribe: Unsubscription [IPv4/mpls-vpn,target:64512:10] by TestableVPNInstance 1 
+2015-07-17 10:36:24,101 MainThread                     bagpipe.bgp.vpn.label_allocator DEBUG    released label 135 ('Incoming traffic for TestableVPNInstance 1')
+2015-07-17 10:36:24,102 TestableVPNInstance 1          bagpipe.bgp.engine.worker      DEBUG    StopEvent, breaking queue processor loop
